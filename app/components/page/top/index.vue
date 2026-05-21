@@ -19,6 +19,7 @@ const handleClick = () => {
   <h1 class="bg-black text-white">
     Welcome to Project demo-nuxt
   </h1>
+  <p>Hello World!</p>
 
   <div>
     <span>
