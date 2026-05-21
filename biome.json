@@ -1,13 +1,7 @@
 {
   "$schema": "https://biomejs.dev/schemas/2.4.15/schema.json",
   "files": {
-    "includes": [
-      "**",
-      "!dist",
-      "!.nuxt",
-      "!.output",
-      "!.nitro"
-    ]
+    "includes": ["**", "!dist", "!.nuxt", "!.output", "!.nitro"]
   },
   "formatter": {
     "enabled": true,
@@ -23,11 +17,7 @@
   },
   "overrides": [
     {
-      "includes": [
-        "**/*.svelte",
-        "**/*.astro",
-        "**/*.vue"
-      ],
+      "includes": ["**/*.svelte", "**/*.astro", "**/*.vue"],
       "linter": {
         "rules": {
           "style": {

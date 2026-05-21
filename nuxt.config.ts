@@ -1,24 +1,24 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import tailwindcss from "@tailwindcss/vite";
 export default defineNuxtConfig({
-  compatibilityDate: '2025-07-15',
+  compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
   nitro: {
-    preset: 'cloudflare-pages',
+    preset: "cloudflare-pages",
   },
   modules: [
     [
-      '@vee-validate/nuxt',
+      "@vee-validate/nuxt",
       {
-      // disable or enable auto imports
-      autoImports: true,
-      // Use different names for components
-      componentNames: {
-      Form: 'VeeForm',
-      Field: 'VeeField',
-      FieldArray: 'VeeFieldArray',
-      ErrorMessage: 'VeeErrorMessage',
-      },
+        // disable or enable auto imports
+        autoImports: true,
+        // Use different names for components
+        componentNames: {
+          Form: "VeeForm",
+          Field: "VeeField",
+          FieldArray: "VeeFieldArray",
+          ErrorMessage: "VeeErrorMessage",
+        },
       },
     ],
   ],
@@ -28,10 +28,8 @@ export default defineNuxtConfig({
       apiKey: process.env.MICROCMS_API_KEY,
     },
   },
-  css: ['./app/assets/styles/main.css'],
+  css: ["./app/assets/styles/main.css"],
   vite: {
-    plugins: [
-      tailwindcss(),
-    ],
-  }
-})
+    plugins: [tailwindcss()],
+  },
+});

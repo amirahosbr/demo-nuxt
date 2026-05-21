@@ -7,12 +7,12 @@
  * @module Components
  */
 
-const count = ref<number>(0)
+const count = ref<number>(0);
 
 const handleClick = () => {
-  count.value++
-  console.log("Count: ", count.value)
-}
+  count.value++;
+  console.log("Count: ", count.value);
+};
 </script>
 
 <template>
